@@ -10,3 +10,8 @@ output "aws_region" {
   description = "AWS region for all resources."
   value       = var.aws_region
 }
+
+output "keyspace_name" {
+  description = "Name of Cassandra keyspace."
+  value       = awscc_cassandra_keyspace.terraform.keyspace_name
+}
